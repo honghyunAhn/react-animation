@@ -29,11 +29,19 @@ const Circle = styled(motion.div)`
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.06);
 `;
 
+const boxVariants:Variants = {
+  start: {
+    opacity: 0,
+    scale: 0.5,
+  },
+  end: {
+  },
+};
 
 function App() {
   return (
     <Wrapper>
-      <Box initial="start" animate="end">
+      <Box variants={boxVariants} initial="start" animate="end">
         <Circle />
         <Circle />
         <Circle />
