@@ -47,6 +47,13 @@ const boxVariants:Variants = {
   },
 };
 
+const circleVariants:Variants = {
+  start: {
+  },
+  end: {
+  },
+};
+
 function App() {
   return (
     <Wrapper>
