@@ -1,4 +1,3 @@
-//8.4 Variants part Two
 import styled from "styled-components";
 import { motion, Variants } from "framer-motion"
 
@@ -49,8 +48,12 @@ const boxVariants:Variants = {
 
 const circleVariants:Variants = {
   start: {
+    opacity: 0,
+    y: 10,
   },
   end: {
+    opacity: 1,
+    y: 0,
   },
 };
 
@@ -58,10 +61,10 @@ function App() {
   return (
     <Wrapper>
       <Box variants={boxVariants} initial="start" animate="end">
-        <Circle />
-        <Circle />
-        <Circle />
-        <Circle />
+        <Circle variants={circleVariants} />
+        <Circle variants={circleVariants} />
+        <Circle variants={circleVariants} />
+        <Circle variants={circleVariants} />
       </Box>
     </Wrapper>
   );
