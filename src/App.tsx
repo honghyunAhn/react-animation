@@ -34,17 +34,21 @@ const boxVariants:Variants = {
   drag: { backgroundColor: "rgb(46, 204, 113)", transition: { duration: 10 } },
 };
 
-
 function App() {
+  const biggerBoxRef = useRef<HTMLDivElement>(null);
   return (
     <Wrapper>
+      <BiggerBox ref={biggerBoxRef}>
         <Box
           drag
+          dragSnapToOrigin
+          dragElastic={0.5}
+          dragConstraints={biggerBoxRef}
           variants={boxVariants}
           whileHover="hover"
-          whileDrag="drag"
           whileTap="click"
         />
+      </BiggerBox>
     </Wrapper>
   );
 }
