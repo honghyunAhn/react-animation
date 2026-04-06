@@ -36,6 +36,8 @@ function App() {
       >
         <motion.path
           variants={svg}
+          initial="start"
+          animate="end"
         ></motion.path>
       </Svg>
     </Wrapper>
