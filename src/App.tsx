@@ -38,6 +38,9 @@ function App() {
           variants={svg}
           initial="start"
           animate="end"
+          transition={{
+            default: { duration: 5 },
+          }}
         ></motion.path>
       </Svg>
     </Wrapper>
