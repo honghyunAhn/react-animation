@@ -7,6 +7,7 @@ const Wrapper = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
+
 `;
 
 const Svg = styled.svg`
@@ -40,6 +41,7 @@ function App() {
           animate="end"
           transition={{
             default: { duration: 5 },
+            fill: { duration: 1, delay: 3 },
           }}
         ></motion.path>
       </Svg>
