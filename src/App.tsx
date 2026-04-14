@@ -10,13 +10,9 @@ const Wrapper = styled(motion.div)`
   align-items: center;
 `;
 
-const Svg = styled.svg`
-  width: 300px;
-  height: 300px;
-  path {
-    stroke: white;
-    stroke-width: 2;
-  }
+const Box = styled(motion.div)`
+  width: 400px;
+  height: 200px;
 `;
 
 const svg = {
