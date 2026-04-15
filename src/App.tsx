@@ -13,6 +13,10 @@ const Wrapper = styled(motion.div)`
 const Box = styled(motion.div)`
   width: 400px;
   height: 200px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 40px;
+  position: absolute;
+  top: 100px;
 `;
 
 const svg = {
