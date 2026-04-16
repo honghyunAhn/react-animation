@@ -17,6 +17,7 @@ const Box = styled(motion.div)`
   border-radius: 40px;
   position: absolute;
   top: 100px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.06);
 `;
 
 const svg = {
