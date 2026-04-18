@@ -25,6 +25,8 @@ const boxVariants = {
     opacity: 0,
     scale: 0,
   },
+  visible: {
+  },
 };
 
 function App() {
