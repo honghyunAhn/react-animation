@@ -26,6 +26,9 @@ const boxVariants = {
     scale: 0,
   },
   visible: {
+    opacity: 1,
+    scale: 1,
+    rotateZ: 360,
   },
 };
 
