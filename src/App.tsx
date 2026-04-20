@@ -30,6 +30,8 @@ const boxVariants = {
     scale: 1,
     rotateZ: 360,
   },
+  leaving: {
+  },
 };
 
 function App() {
