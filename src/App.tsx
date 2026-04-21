@@ -31,6 +31,9 @@ const boxVariants = {
     rotateZ: 360,
   },
   leaving: {
+    opacity: 0,
+    scale: 0,
+    y: 50,
   },
 };
 
