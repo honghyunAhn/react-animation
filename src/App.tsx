@@ -38,6 +38,7 @@ const boxVariants = {
 };
 
 function App() {
+  const [showing, setShowing] = useState(false);
   return (
     <Wrapper>
     </Wrapper>
