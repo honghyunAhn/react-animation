@@ -39,6 +39,7 @@ const boxVariants = {
 
 function App() {
   const [showing, setShowing] = useState(false);
+  const toggleShowing = () => setShowing((prev) => !prev);
   return (
     <Wrapper>
     </Wrapper>
