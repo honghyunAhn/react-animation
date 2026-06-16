@@ -42,6 +42,10 @@ function App() {
   const toggleShowing = () => setShowing((prev) => !prev);
   return (
     <Wrapper>
+      <button onClick={toggleShowing}>Click</button>
+      <AnimatePresence>
+        {showing ? null : null}
+      </AnimatePresence>
     </Wrapper>
   );
 }
