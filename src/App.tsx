@@ -44,7 +44,14 @@ function App() {
     <Wrapper>
       <button onClick={toggleShowing}>Click</button>
       <AnimatePresence>
-        {showing ? null : null}
+        {showing ? (
+          <Box
+            variants={boxVariants}
+            initial="initial"
+            animate="visible"
+            exit="leaving"
+          />
+        ) : null}
       </AnimatePresence>
     </Wrapper>
   );
