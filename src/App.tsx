@@ -8,6 +8,7 @@ const Wrapper = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 `;
 
 const Box = styled(motion.div)`
@@ -17,6 +18,10 @@ const Box = styled(motion.div)`
   border-radius: 40px;
   position: absolute;
   top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.06);
 `;
 
@@ -29,7 +34,7 @@ const boxVariants = {
     opacity: 1,
     scale: 1,
     rotateZ: 360,
-  },
+    },
   leaving: {
     opacity: 0,
     scale: 0,
@@ -45,10 +50,10 @@ function App() {
       <button onClick={toggleShowing}>Click</button>
       <AnimatePresence>
         {showing ? (
-          <Box
+            <Box
             variants={boxVariants}
             initial="initial"
-            animate="visible"
+              animate="visible"
             exit="leaving"
           />
         ) : null}
