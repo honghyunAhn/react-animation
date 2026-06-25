@@ -54,7 +54,7 @@ function App() {
       <AnimatePresence>
         {showing ? (
             <Box
-            variants={boxVariants}
+            variants={box}
             initial="initial"
               animate="visible"
             exit="leaving"
